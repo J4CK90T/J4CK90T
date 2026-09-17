@@ -1,23 +1,20 @@
-# Jackpot — Roblox Animator Portfolio
+Jackpot — Roblox Animator Portfolio
 
-Static one-page portfolio. No build step, no dependencies.
+This is my portfolio site. Static page, no build step, no dependencies — just open index.html or host it as-is.
 
-## Put it online with GitHub Pages
+How I put it online with GitHub Pages
+Made a new repo on GitHub (public).
+Uploaded everything in this folder — index.html, videos/, posters/, README.md — keeping the folder structure.
+Went to Settings → Pages → Build and deployment → Source: Deploy from a branch, set branch to main, folder to / (root), then hit Save.
+A minute later it was live at https://YOURUSERNAME.github.io/REPONAME/.
 
-1. Create a new repository on GitHub (public).
-2. Upload everything in this folder — `index.html`, `videos/`, `posters/`, `README.md` — keeping the folder structure.
-3. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`, then Save.
-4. A minute later the site is live at `https://YOURUSERNAME.github.io/REPONAME/`.
+If I name the repo YOURUSERNAME.github.io instead, I get the shorter https://YOURUSERNAME.github.io/.
 
-Naming the repo `YOURUSERNAME.github.io` instead gives you `https://YOURUSERNAME.github.io/`.
+Stuff I need to update
+The Discord link and handle are already mine — no email, no Twitter, Discord's the only way to reach me.
+In index.html, bottom of the script, there's a clips list — one line per video with its id and duration. That's what feeds the grid. No captions show on the site anymore, but I still keep the note text in the code for my own reference.
+To drop a clip: delete its line from clips. To add one: drop the .mp4 in videos/, a still with the same name in posters/, then add a line.
+The hero video is videos/hero-duo-scene.mp4. If I want a different clip up front, I just swap the filename in the script.
+Size note
 
-## Things to change before publishing
-
-- `index.html`, contact section: replace `YOUR@EMAIL.COM`, `YOUR_ID` (Discord) and `YOUR_HANDLE` (X).
-- `index.html`, bottom script: the `clips` list holds the title, one-line note and duration for each video. Edit the text there to name the real games and roles — placeholders are in now.
-- To drop a clip, delete its line from `clips`; to add one, put the `.mp4` in `videos/`, a still in `posters/` with the same name, and add a line.
-- The hero video is `videos/hero-duo-scene.mp4`. Swap the filename in the script to feature a different clip.
-
-## Size note
-
-The videos total ~55 MB. That's fine for GitHub (the hard limit is 100 MB per file), but if the repo grows past a few hundred MB, host the videos on YouTube or Streamable and embed them instead.
+All my videos together are ~55 MB, well under GitHub's 100 MB-per-file limit. If I keep adding clips and this repo gets into the hundreds of MB, I'll move the videos to YouTube or Streamable and embed them instead of hosting them directly.
